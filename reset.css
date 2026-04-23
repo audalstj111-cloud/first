@@ -1,12 +1,13 @@
 @charset "utf-8";
 
 body {
-  font-family: "Noto Serif KR", serif;
+  font-family: 'Noto Serif KR', serif;
   font-size: 18px;
   color: #121212;
 }
-s .ffJosefin {
-  font-family: "Josefin Sans", sans-serif;
+s
+.ffJosefin {
+  font-family: 'Josefin Sans',sans-serif;
 }
 
 .innerWrap {
@@ -18,7 +19,7 @@ s .ffJosefin {
 main h2 {
   text-align: center;
   font-size: 60px;
-  letter-spacing: 0.05em;
+  letter-spacing: .05em;
   margin-bottom: 80px;
 }
 header {
@@ -48,6 +49,7 @@ header nav {
   left: 0;
   width: 100%;
   z-index: 100;
+  background-color: rgba(255, 255, 255, 1);
 }
 header nav ul {
   display: flex;
@@ -96,7 +98,7 @@ header nav ul li a:hover {
 }
 .dateSec .layoutWrap > div {
   flex-basis: 465px;
-  padding-top: 100px;
+  padding-top: 100px;  
 }
 
 .dateSec .dateDetailSec {
@@ -107,26 +109,22 @@ header nav ul li a:hover {
   line-height: 1.2;
 }
 
-.word1 {
-  font-size: 50px;
-}
-.word2 {
-  font-size: 40px;
-}
-.word3 {
-  font-size: 60px;
-}
+.word1 {font-size: 50px;}
+.word2 {font-size: 40px;}
+.word3 {font-size: 60px;}
 
 .accessSec {
   margin-left: 48px;
 }
+
 .accessSec h3 {
   color: #cfafa3;
+  font-size: 55px;
   letter-spacing: 0.05em;
   margin-bottom: 8px;
 }
 
-.accessSec {
+.accessSec p {
   line-height: 1.6;
 }
 
@@ -138,6 +136,7 @@ header nav ul li a:hover {
 form {
   width: 600px;
   margin: 0 auto;
+  /* line-height: 1.6; */
 }
 
 input[type="text"],
@@ -145,7 +144,7 @@ input[type="email"],
 select,
 textarea {
   border: 1px solid #cccccc;
-  border-color: #ffffff;
+  background-color: #ffffff;
   width: 100%;
   margin-top: 5px;
   padding: 4px 8px;
@@ -161,7 +160,7 @@ input[type="checkbox"] {
 
 .attendRadio {
   text-align: center;
-  margin: 0 20px;
+  margin-bottom: 40px;
 }
 
 .attendRadio label {
@@ -169,20 +168,22 @@ input[type="checkbox"] {
   font-size: 24px;
 }
 
-.attendRadio label {
+.allergyCheck label {
   margin-right: 24px;
 }
+
 select {
-  background: url(assets/arrow.png) no-repeat 98% 50% 17px 10px;
+  background: url(../assets/arrow.png) no-repeat 98% 50%/17px 10px;
+  
 }
 
 .submitBtn {
   text-align: center;
-  /* margin-top: 50px; */
+  margin-top: 28px;
 }
 
 input[type="submit"] {
-  background-color: #12121212;
+  background-color: #121212;
   color: #ffffff;
   padding: 18px 80px;
 }
@@ -195,13 +196,12 @@ textarea {
   margin-bottom: 480px;
 }
 
-.dateSe::after {
+.dateSec::after {
   content: "";
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: url "(./assets/bg.jpg)" no-repeat center/cover;
+  background: url(../assets/bg.jpg) no-repeat center/cover;
   z-index: -1;
-}
